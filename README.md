@@ -15,13 +15,13 @@ PrevDent é uma aplicação Android desenvolvida em Kotlin com foco na autentica
   - ViewBinding
   - ConstraintLayout
 
+## Link do Figma
+Você pode acessar o design da tela de login no Figma através deste [link](https://www.figma.com/design/LdbWpLFI6QwxVDzIIAu9va/PrevDent?node-id=0-1&node-type=canvas&t=0mb1Hs0qjFSQtA78-0).
+
 ## Como Executar o Projeto
 
 1. Clone este repositório:
    ```bash
    git clone https://github.com/seu-usuario/prevdent.git
 
-Abra o projeto no Android Studio.
-
-Compile e execute o projeto em um dispositivo físico ou emulador.
 
