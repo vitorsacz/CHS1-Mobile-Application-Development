@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    android:backgroundTint="#123A7C">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+        android:padding="16dp">
+
+        <!-- Data da Consulta -->
+        <LinearLayout
+            android:id="@+id/dateBackground"
+            android:layout_width="107dp"
+            android:layout_height="96dp"
+            android:background="@drawable/rounded_corner_background"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="07"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Out"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Informações do Médico e Especialidade -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toRightOf="@id/dateBackground"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="09:30 AM"
+                android:textColor="#D1E0FF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textDoctorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr. Keven Ike"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textSpecialty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Periodontia"
+                android:textColor="#D1E0FF"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Ícone de Opções -->
+        <!--<ImageView
+            android:id="@+id/optionsIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_more_vert"
+            android:tint="#D1E0FF" />-->
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

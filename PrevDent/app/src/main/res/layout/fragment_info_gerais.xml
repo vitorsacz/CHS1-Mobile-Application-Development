@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Título da Tela -->
+
+    <!-- Grid de Cards de Informações Gerais -->
+
+    <!-- Últimos Registros -->
+
+    <!-- RecyclerView para os registros -->
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="Informações gerais"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/gridInformacoes"
+        android:layout_width="418dp"
+        android:layout_height="327dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo">
+
+        <!-- Card Tipo Sanguíneo -->
+
+        <!-- Card Idade -->
+
+        <!-- Card Altura -->
+
+        <!-- Card Peso -->
+
+        <LinearLayout
+            android:id="@+id/cardTipoSanguineo"
+            android:layout_width="196dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rounded_card_background"
+            android:backgroundTint="@color/light_red"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintEnd_toStartOf="@id/cardIdade"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.48">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sangue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo Sanguíneo"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O-"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardIdade"
+            android:layout_width="192dp"
+            android:layout_height="141dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rounded_card_background"
+            android:backgroundTint="@color/light_yellow"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cardTipoSanguineo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.48">
+
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="37dp"
+                android:contentDescription="@string/age_icon"
+                android:src="@drawable/bolopng" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Idade"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 anos"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardAltura"
+            android:layout_width="200dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_card_background"
+            android:backgroundTint="@color/light_blue"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintEnd_toStartOf="@id/cardPeso"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardTipoSanguineo"
+            app:layout_constraintWidth_percent="0.48">
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="26dp"
+                android:contentDescription="@string/height_icon"
+                android:src="@drawable/medric" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Altura"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.10m"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardPeso"
+            android:layout_width="197dp"
+            android:layout_height="144dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_card_background"
+            android:backgroundTint="@color/light_green"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cardAltura"
+            app:layout_constraintTop_toBottomOf="@id/cardIdade"
+            app:layout_constraintWidth_percent="0.48">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/weight_icon"
+                android:src="@drawable/peso" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Peso"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18 kg"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Outros cards de Altura e Peso vão seguir a mesma estrutura -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Seção Últimos Registros -->
+
+    <TextView
+        android:id="@+id/tvUltimosRegistros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Últimos registros"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.017"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gridInformacoes" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewRegistros"
+        android:layout_width="408dp"
+        android:layout_height="332dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvUltimosRegistros"
+        tools:ignore="MissingConstraints"
+        tools:listitem="@layout/item_registro" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="428dp"
+        android:layout_height="62dp"
+        android:background="@color/white"
+        app:itemIconTint="@color/bottom_nav_icon_color"
+        app:itemTextColor="@color/bottom_nav_icon_color"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewRegistros"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_nav_menu"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

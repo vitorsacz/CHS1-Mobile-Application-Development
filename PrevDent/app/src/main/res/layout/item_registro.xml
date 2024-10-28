@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_card_blue"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp">
+
+    <!-- Ícone do registro -->
+    <ImageView
+        android:id="@+id/iconRegistro"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:src="@drawable/prancheta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Título do registro (Tipo) -->
+    <TextView
+        android:id="@+id/tvTipoRegistro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tipo: Dor no dente"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/iconRegistro"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Ocorrência -->
+    <TextView
+        android:id="@+id/tvOcorrenciaRegistro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ocorrência: Frequente"
+        android:textSize="14sp"
+        android:textColor="#666"
+        app:layout_constraintStart_toEndOf="@id/iconRegistro"
+        app:layout_constraintTop_toBottomOf="@id/tvTipoRegistro"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Intensidade -->
+    <TextView
+        android:id="@+id/tvIntensidadeRegistro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Intensidade: Moderada"
+        android:textSize="14sp"
+        android:textColor="#666"
+        app:layout_constraintStart_toEndOf="@id/iconRegistro"
+        app:layout_constraintTop_toBottomOf="@id/tvOcorrenciaRegistro"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Informações adicionais -->
+    <TextView
+        android:id="@+id/tvInformacoesAdicionais"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Info: Detalhes adicionais..."
+        android:textSize="14sp"
+        android:textColor="#666"
+        app:layout_constraintStart_toEndOf="@id/iconRegistro"
+        app:layout_constraintTop_toBottomOf="@id/tvIntensidadeRegistro"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

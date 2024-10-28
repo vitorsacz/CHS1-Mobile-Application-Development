@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">PrevDent</string>
+    <string name="blood_type_icon">Ícone de Tipo Sanguíneo</string>
+    <string name="age_icon">Ícone de Idade</string>
+    <string name="height_icon">Ícone de altura</string>
+    <string name="weight_icon">Icone de peso</string>
 </resources>

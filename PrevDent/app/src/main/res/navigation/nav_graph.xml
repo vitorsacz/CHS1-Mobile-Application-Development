@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="br.com.fiap.prevdent.StartFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_cadastroFragment"
+            app:destination="@id/cadastroFragment" />
+    </fragment>
+
+    <!-- Login Fragment -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="br.com.fiap.prevdent.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <!-- Cadastro Fragment -->
+    <fragment
+        android:id="@+id/cadastroFragment"
+        android:name="br.com.fiap.prevdent.CadastroFragment"
+        android:label="Cadastro"
+        tools:layout="@layout/fragment_cadastro" />
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="br.com.fiap.prevdent.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+
+        <!-- Ação para navegar para InfoGeraisFragment -->
+        <action
+            android:id="@+id/action_homeFragment_to_infoGeraisFragment"
+            app:destination="@id/infoGeraisFragment" />
+
+        <!-- Ação para navegar para RegistroFragment -->
+        <action
+            android:id="@+id/action_homeFragment_to_registroFragment"
+            app:destination="@id/registroFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/infoGeraisFragment"
+        android:name="br.com.fiap.prevdent.InfoGeraisFragment"
+        android:label="Informações Gerais"
+        tools:layout="@layout/fragment_info_gerais">
+
+        <action
+            android:id="@+id/action_infoGeraisFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+
+        <action
+            android:id="@+id/action_infoGeraisFragment_to_registroFragment"
+            app:destination="@id/registroFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registroFragment"
+        android:name="br.com.fiap.prevdent.RegistroFragment"
+        android:label="Novo Registro"
+        tools:layout="@layout/fragment_registro" />
+
+</navigation>

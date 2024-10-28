@@ -1,0 +1,193 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:background="@color/white">
+
+    <!-- Saudação e Perfil -->
+
+    <!-- Imagem de Perfil -->
+    <TextView
+        android:id="@+id/textGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:text="Olá"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Keven Ike"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textGreeting" />
+
+
+
+    <ImageView
+        android:id="@+id/imageProfile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/circular_image"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_keven"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/searchBarContainer"
+        android:layout_width="402dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_edit_text_background"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textUserName">
+
+        <!-- Ícone de Pesquisa -->
+        <ImageView
+            android:id="@+id/searchIcon"
+            android:layout_width="25dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/lupadabarradepesquisa"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Campo de Pesquisa -->
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="310dp"
+            android:layout_height="37dp"
+            android:background="@android:color/transparent"
+            android:hint="Diga os seu sintomas"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/searchIcon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Ícone de Filtro -->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Banner de Mensagem -->
+
+    <!-- Barra de Navegação Inferior -->
+
+    <TextView
+        android:id="@+id/textScheduledConsultation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:text="Consulta agendada"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchBarContainer" />
+
+
+    <LinearLayout
+        android:id="@+id/containerScheduledConsultations"
+        android:layout_width="412dp"
+        android:layout_height="323dp"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textScheduledConsultation">
+
+        <!-- Consulta 1 -->
+        <include layout="@layout/item_consultation_card" />
+
+        <!-- Consulta 2 -->
+        <include layout="@layout/item_consultation_card" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/containerMessage"
+        android:layout_width="422dp"
+        android:layout_height="192dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/background_banner"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerScheduledConsultations">
+
+        <!-- Layout vertical para o título e subtítulo -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Texto principal -->
+            <TextView
+                android:id="@+id/textBannerMessageTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Está tudo certo com o Keven!"
+                android:textColor="#009688"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Subtítulo -->
+            <TextView
+                android:id="@+id/textBannerMessageSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keven não registra nenhuma queixa nas últimas semanas"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Imagem do banner -->
+        <ImageView
+            android:id="@+id/imageBanner"
+            android:layout_width="123dp"
+            android:layout_height="188dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/imagemdentistaok" />
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="446dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/white"
+        app:itemIconTint="@color/bottom_nav_icon_color"
+        app:itemTextColor="@color/bottom_nav_icon_color"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav_menu"
+        tools:layout_editor_absoluteX="1dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
