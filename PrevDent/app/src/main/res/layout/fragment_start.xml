@@ -13,7 +13,7 @@
         android:id="@+id/text_principal_entrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="208dp"
+        android:layout_marginTop="108dp"
         android:text="Entrar"
         android:textColor="#013EB0"
         android:textSize="60sp"
@@ -53,8 +53,8 @@
 
     <Button
         android:id="@+id/btn_tela_cadastrar"
-        android:layout_width="396dp"
-        android:layout_height="60dp"
+        android:layout_width="391dp"
+        android:layout_height="63dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="#013EB0"
         android:text="Cadastre-se"
