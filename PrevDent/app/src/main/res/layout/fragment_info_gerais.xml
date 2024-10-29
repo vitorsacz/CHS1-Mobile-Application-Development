@@ -20,19 +20,19 @@
         android:id="@+id/tvTitulo"
         android:layout_width="219dp"
         android:layout_height="33dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:text="Informações gerais"
-        android:textSize="20sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/gridInformacoes"
-        android:layout_width="367dp"
-        android:layout_height="259dp"
+        android:layout_width="356dp"
+        android:layout_height="234dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,8 +48,8 @@
 
         <LinearLayout
             android:id="@+id/cardTipoSanguineo"
-            android:layout_width="163dp"
-            android:layout_height="103dp"
+            android:layout_width="152dp"
+            android:layout_height="105dp"
             android:layout_marginTop="4dp"
             android:background="@drawable/rounded_card_background"
             android:backgroundTint="@color/light_red"
@@ -81,8 +81,8 @@
 
         <LinearLayout
             android:id="@+id/cardIdade"
-            android:layout_width="164dp"
-            android:layout_height="103dp"
+            android:layout_width="152dp"
+            android:layout_height="105dp"
             android:layout_marginTop="4dp"
             android:background="@drawable/rounded_card_background"
             android:backgroundTint="@color/light_yellow"
@@ -115,8 +115,8 @@
 
         <LinearLayout
             android:id="@+id/cardAltura"
-            android:layout_width="166dp"
-            android:layout_height="103dp"
+            android:layout_width="152dp"
+            android:layout_height="105dp"
             android:layout_marginTop="12dp"
             android:background="@drawable/rounded_card_background"
             android:backgroundTint="@color/light_blue"
@@ -149,8 +149,8 @@
 
         <LinearLayout
             android:id="@+id/cardPeso"
-            android:layout_width="159dp"
-            android:layout_height="98dp"
+            android:layout_width="152dp"
+            android:layout_height="105dp"
             android:layout_marginTop="12dp"
             android:background="@drawable/rounded_card_background"
             android:backgroundTint="@color/light_green"
@@ -191,9 +191,9 @@
         android:id="@+id/tvUltimosRegistros"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="16dp"
         android:text="Últimos registros"
-        android:textSize="20sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.049"
@@ -202,10 +202,11 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewRegistros"
-        android:layout_width="391dp"
-        android:layout_height="235dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="373dp"
+        android:layout_height="221dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvUltimosRegistros"
         tools:ignore="MissingConstraints"
@@ -213,15 +214,14 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
-        android:layout_width="390dp"
-        android:layout_height="69dp"
+        android:layout_width="367dp"
+        android:layout_height="71dp"
         android:background="@color/white"
         app:itemIconTint="@color/bottom_nav_icon_color"
         app:itemTextColor="@color/bottom_nav_icon_color"
         app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recyclerViewRegistros"
         app:layout_constraintVertical_bias="1.0"

@@ -37,8 +37,8 @@
 
     <EditText
         android:id="@+id/id_nome_completo"
-        android:layout_width="374dp"
-        android:layout_height="68dp"
+        android:layout_width="340dp"
+        android:layout_height="54dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/rounded_input"
         android:elevation="10dp"
@@ -54,8 +54,8 @@
 
     <EditText
         android:id="@+id/id_nome_usuario"
-        android:layout_width="377dp"
-        android:layout_height="67dp"
+        android:layout_width="340dp"
+        android:layout_height="54dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/rounded_input"
         android:elevation="10dp"
@@ -73,8 +73,8 @@
 
     <EditText
         android:id="@+id/id_email_cadastro"
-        android:layout_width="371dp"
-        android:layout_height="68dp"
+        android:layout_width="340dp"
+        android:layout_height="54dp"
         android:layout_marginTop="144dp"
         android:background="@drawable/rounded_input"
         android:elevation="10dp"
@@ -91,8 +91,8 @@
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="374dp"
-        android:layout_height="66dp"
+        android:layout_width="340dp"
+        android:layout_height="54dp"
         android:layout_marginTop="244dp"
         android:background="@drawable/rounded_input"
         android:elevation="10dp"
@@ -110,7 +110,7 @@
         android:id="@+id/id_button_cadastrar"
         android:layout_width="195dp"
         android:layout_height="67dp"
-        android:layout_marginTop="456dp"
+        android:layout_marginTop="432dp"
         android:backgroundTint="#013EB0"
         android:text="Cadastrar"
         android:textSize="20sp"

@@ -9,12 +9,14 @@
     <!-- Saudação e Perfil -->
 
     <!-- Imagem de Perfil -->
+
+
     <TextView
         android:id="@+id/textGreeting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
         android:text="Olá"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -25,15 +27,13 @@
         android:id="@+id/textUserName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="Keven Ike"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textGreeting" />
-
-
 
     <ImageView
         android:id="@+id/imageProfile"
@@ -50,8 +50,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/searchBarContainer"
-        android:layout_width="384dp"
-        android:layout_height="48dp"
+        android:layout_width="364dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="16dp"
@@ -102,9 +102,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="28dp"
         android:text="Consultas agendada"
-        android:textSize="27sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/searchBarContainer" />
@@ -126,7 +126,7 @@
 
     <LinearLayout
         android:id="@+id/containerMessage"
-        android:layout_width="388dp"
+        android:layout_width="367dp"
         android:layout_height="180dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
@@ -135,7 +135,6 @@
         android:orientation="horizontal"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/containerScheduledConsultations">
 
