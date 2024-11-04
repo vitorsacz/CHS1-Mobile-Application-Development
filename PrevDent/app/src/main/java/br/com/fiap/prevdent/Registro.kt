@@ -1,11 +1,14 @@
 package br.com.fiap.prevdent
 
+import com.google.gson.annotations.SerializedName
+
+
 data class Registro(
-    val titulo: String,
-    val detalhes: String,
     val tipo: String,
     val ocorrencia: String,
     val intensidade: String,
-    val informacoesAdicionais: String
 
+    @SerializedName("informacoes_adicionais")
+    val informacoesAdicionais: String
 )
+

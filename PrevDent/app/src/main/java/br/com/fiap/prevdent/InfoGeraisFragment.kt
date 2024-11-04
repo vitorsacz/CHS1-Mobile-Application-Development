@@ -73,12 +73,4 @@ class InfoGeraisFragment : Fragment(R.layout.fragment_info_gerais) {
         })
     }
 
-    // Função para carregar registros fictícios para teste
-    private fun carregarRegistrosFicticios() {
-        val registros = listOf(
-            Registro("Dor no dente", "★★★☆☆", "Dor", "Frequente", "Alta", "Detalhes sobre a dor"),
-            Registro("Alimentação", "★★★★☆", "Sensibilidade", "Ocasional", "Média", "Detalhes sobre a alimentação")
-        )
-        registroAdapter.atualizarRegistros(registros)
-    }
 }

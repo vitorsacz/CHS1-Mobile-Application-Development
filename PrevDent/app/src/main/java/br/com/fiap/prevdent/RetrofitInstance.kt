@@ -6,12 +6,17 @@ import retrofit2.converter.gson.GsonConverterFactory
 object RetrofitInstance {
     private val retrofit by lazy {
         Retrofit.Builder()
-            .baseUrl("https://sua_api_base_url/") // Substitua pela URL base do seu back-end
+            .baseUrl("http://10.0.2.2:8080/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
 
     val api: RegistroApi by lazy {
         retrofit.create(RegistroApi::class.java)
+    }
+
+    // Instância para a ConsultaApi
+    val consultaApi: ConsultaApi by lazy {
+        retrofit.create(ConsultaApi::class.java)
     }
 }

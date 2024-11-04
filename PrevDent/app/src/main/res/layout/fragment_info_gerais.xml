@@ -8,14 +8,6 @@
     android:padding="16dp"
     android:background="@color/white">
 
-    <!-- Título da Tela -->
-
-    <!-- Grid de Cards de Informações Gerais -->
-
-    <!-- Últimos Registros -->
-
-    <!-- RecyclerView para os registros -->
-
     <TextView
         android:id="@+id/tvTitulo"
         android:layout_width="219dp"
@@ -31,25 +23,17 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/gridInformacoes"
-        android:layout_width="356dp"
-        android:layout_height="234dp"
+        android:layout_width="359dp"
+        android:layout_height="241dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvTitulo">
 
-        <!-- Card Tipo Sanguíneo -->
-
-        <!-- Card Idade -->
-
-        <!-- Card Altura -->
-
-        <!-- Card Peso -->
-
         <LinearLayout
             android:id="@+id/cardTipoSanguineo"
-            android:layout_width="152dp"
-            android:layout_height="105dp"
+            android:layout_width="163dp"
+            android:layout_height="108dp"
             android:layout_marginTop="4dp"
             android:background="@drawable/rounded_card_background"
             android:backgroundTint="@color/light_red"
@@ -81,8 +65,8 @@
 
         <LinearLayout
             android:id="@+id/cardIdade"
-            android:layout_width="152dp"
-            android:layout_height="105dp"
+            android:layout_width="166dp"
+            android:layout_height="109dp"
             android:layout_marginTop="4dp"
             android:background="@drawable/rounded_card_background"
             android:backgroundTint="@color/light_yellow"
@@ -115,8 +99,8 @@
 
         <LinearLayout
             android:id="@+id/cardAltura"
-            android:layout_width="152dp"
-            android:layout_height="105dp"
+            android:layout_width="163dp"
+            android:layout_height="108dp"
             android:layout_marginTop="12dp"
             android:background="@drawable/rounded_card_background"
             android:backgroundTint="@color/light_blue"
@@ -149,8 +133,8 @@
 
         <LinearLayout
             android:id="@+id/cardPeso"
-            android:layout_width="152dp"
-            android:layout_height="105dp"
+            android:layout_width="169dp"
+            android:layout_height="108dp"
             android:layout_marginTop="12dp"
             android:background="@drawable/rounded_card_background"
             android:backgroundTint="@color/light_green"
@@ -181,11 +165,8 @@
                 android:textSize="14sp" />
         </LinearLayout>
 
-        <!-- Outros cards de Altura e Peso vão seguir a mesma estrutura -->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <!-- Seção Últimos Registros -->
 
     <TextView
         android:id="@+id/tvUltimosRegistros"
@@ -202,8 +183,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewRegistros"
-        android:layout_width="373dp"
-        android:layout_height="221dp"
+        android:layout_width="374dp"
+        android:layout_height="238dp"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

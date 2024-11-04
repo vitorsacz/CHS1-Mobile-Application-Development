@@ -73,6 +73,15 @@
         android:id="@+id/registroFragment"
         android:name="br.com.fiap.prevdent.RegistroFragment"
         android:label="Novo Registro"
-        tools:layout="@layout/fragment_registro" />
+        tools:layout="@layout/fragment_registro">
+
+        <action
+            android:id="@+id/action_registroFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+
+        <action
+            android:id="@+id/action_registroFragment_to_infoGeraisFragment"
+            app:destination="@id/infoGeraisFragment" />
+    </fragment>
 
 </navigation>

@@ -21,6 +21,8 @@ class RegistroAdapter(private var registros: List<Registro>) :
         holder.tvOcorrenciaRegistro.text = "Ocorrência: ${registro.ocorrencia}"
         holder.tvIntensidadeRegistro.text = "Intensidade: ${registro.intensidade}"
         holder.tvInformacoesAdicionais.text = "Info: ${registro.informacoesAdicionais}"
+
+        holder.tvInformacoesAdicionais.text = "Info: ${registro.informacoesAdicionais ?: "Sem informações adicionais"}"
     }
 
     override fun getItemCount(): Int = registros.size

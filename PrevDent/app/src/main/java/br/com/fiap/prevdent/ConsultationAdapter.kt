@@ -1,14 +1,22 @@
 package br.com.fiap.prevdent
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import java.text.SimpleDateFormat
+import java.util.Locale
 
 
 class ConsultationAdapter(private val consultations: List<Consultation>) :
     RecyclerView.Adapter<ConsultationAdapter.ConsultationViewHolder>() {
+
+    init {
+        // Log para verificar se a lista de consultas contém dados
+        Log.d("ConsultationAdapter", "Consultations list: $consultations")
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ConsultationViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -25,17 +33,32 @@ class ConsultationAdapter(private val consultations: List<Consultation>) :
 
     inner class ConsultationViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val textDate: TextView = itemView.findViewById(R.id.textDate)
-        private val textMonth: TextView = itemView.findViewById(R.id.textMonth)
-        private val textTime: TextView = itemView.findViewById(R.id.textTime)
-        private val textDoctorName: TextView = itemView.findViewById(R.id.textDoctorName)
-        private val textSpecialty: TextView = itemView.findViewById(R.id.textSpecialty)
+        private val textDentist: TextView = itemView.findViewById(R.id.textDentist)
+        private val textPatient: TextView = itemView.findViewById(R.id.textPatient)
+        private val textTreatmentType: TextView = itemView.findViewById(R.id.textTreatmentType)
+        private val textDiagnosis: TextView = itemView.findViewById(R.id.textDiagnosis)
 
         fun bind(consultation: Consultation) {
-            textDate.text = consultation.date // ex: "07"
-            textMonth.text = consultation.month // ex: "Out"
-            textTime.text = consultation.time // ex: "09:30 AM"
-            textDoctorName.text = consultation.doctorName // ex: "Dr. Keven Ike"
-            textSpecialty.text = consultation.specialty // ex: "Periodontia"
+
+            val originalFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX", Locale.getDefault())
+            val targetFormat = SimpleDateFormat("dd MMM", Locale("pt", "BR"))
+
+            try {
+                val date = originalFormat.parse(consultation.data)
+                val formattedDate = targetFormat.format(date)
+                textDate.text = formattedDate
+            } catch (e: Exception) {
+                textDate.text = consultation.data
+            }
+
+
+
+            Log.d("ConsultationAdapter", "Data: ${consultation.data}, Dentista: ${consultation.dentista.nomeDentista}, Paciente: ${consultation.paciente.nome}, Tipo Tratamento: ${consultation.tipoTratamento}, Descrição: ${consultation.diagnostico.descricao}")
+
+            textDentist.text = consultation.dentista.nomeDentista
+            textPatient.text = consultation.paciente.nome
+            textTreatmentType.text = consultation.tipoTratamento
+            textDiagnosis.text = consultation.diagnostico.descricao
         }
     }
 }

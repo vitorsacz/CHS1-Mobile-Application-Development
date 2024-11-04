@@ -10,14 +10,14 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:padding="16dp">
 
         <!-- Data da Consulta -->
         <LinearLayout
             android:id="@+id/dateBackground"
-            android:layout_width="107dp"
-            android:layout_height="69dp"
+            android:layout_width="118dp"
+            android:layout_height="101dp"
             android:background="@drawable/rounded_corner_background"
             android:gravity="center"
             android:orientation="vertical">
@@ -31,13 +31,6 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textMonth"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Out"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp" />
         </LinearLayout>
 
         <!-- Informações do Médico e Especialidade -->
@@ -49,15 +42,15 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textTime"
+                android:id="@+id/textPatient"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="09:30 AM"
+                android:text="Paciente"
                 android:textColor="#D1E0FF"
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/textDoctorName"
+                android:id="@+id/textDentist"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Dr. Keven Ike"
@@ -66,23 +59,21 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textSpecialty"
+                android:id="@+id/textTreatmentType"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Periodontia"
                 android:textColor="#D1E0FF"
                 android:textSize="16sp" />
-        </LinearLayout>
 
-        <!-- Ícone de Opções -->
-        <!--<ImageView
-            android:id="@+id/optionsIcon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="8dp"
-            android:src="@drawable/ic_more_vert"
-            android:tint="#D1E0FF" />-->
+            <TextView
+                android:id="@+id/textDiagnosis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diagnóstico"
+                android:textColor="#D1E0FF"
+                android:textSize="16sp" />
+        </LinearLayout>
 
     </RelativeLayout>
 
