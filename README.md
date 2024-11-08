@@ -42,7 +42,7 @@
   - ConstraintLayout
 
 ## Link do Figma
-Você pode acessar o design da tela de login no Figma através deste [link](https://www.figma.com/design/LdbWpLFI6QwxVDzIIAu9va/PrevDent?node-id=0-1&node-type=canvas&t=0mb1Hs0qjFSQtA78-0).
+Você pode acessar o design da tela no Figma através deste [link](https://www.figma.com/design/LdbWpLFI6QwxVDzIIAu9va/PrevDent?node-id=0-1&node-type=canvas&t=0mb1Hs0qjFSQtA78-0).
 
 ## Vídeo Demonstrativo
 Confira o vídeo demonstrativo no YouTube [aqui](https://www.youtube.com/watch?v=yzYDaAhXnV4).
