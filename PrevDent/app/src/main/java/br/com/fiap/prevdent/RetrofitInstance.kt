@@ -15,7 +15,6 @@ object RetrofitInstance {
         retrofit.create(RegistroApi::class.java)
     }
 
-    // Instância para a ConsultaApi
     val consultaApi: ConsultaApi by lazy {
         retrofit.create(ConsultaApi::class.java)
     }

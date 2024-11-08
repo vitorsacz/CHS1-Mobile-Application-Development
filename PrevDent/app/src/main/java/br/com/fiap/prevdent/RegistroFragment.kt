@@ -25,10 +25,8 @@ class RegistroFragment : Fragment(R.layout.fragment_registro) {
     ): View {
         _binding = FragmentRegistroBinding.inflate(inflater, container, false)
 
-        // Configure o clique do botão
         setupButtonClick()
 
-        // Configure a navegação da barra inferior
         setupBottomNavigationView()
 
         return binding.root
